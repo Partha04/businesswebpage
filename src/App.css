@@ -122,8 +122,7 @@
         }
         
         .content {
-            height: 400px;
-            width: 350px;
+            width: 25%;
             border-radius: 5px;
             padding: 20px;
             margin: 30px;
@@ -170,8 +169,7 @@
         }
         
         .profilecard {
-            height: 300px;
-            width: 350px;
+            width: 25%;
             border-radius: 5px;
             padding: 20px;
             margin: 30px;
@@ -238,14 +236,5 @@
             .coname {
                 font-size: 200%;
                 letter-spacing: 2px;
-            }
-            .content {
-                height: 500px;
-                width: 200px;
-                margin-left: 0px;
-            }
-            .profilecard {
-                height: 400px;
-                width: 300px;
             }
         }
