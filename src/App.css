@@ -1,4 +1,4 @@
-    body {
+        body {
         background-image: url("../src/assets/bg.jpg");
         background-attachment: fixed;
         object-fit: cover
@@ -240,12 +240,11 @@
             letter-spacing: 2px;
         }
         .content {
-            height: 480px;
-            width: 300px;
+            height: 500px;
+            width: 200px;
             margin-left: 0px;
         }
         .profilecard {
             height: 400px;
             width: 300px;
         }
-    }
