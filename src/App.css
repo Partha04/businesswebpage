@@ -1,240 +1,251 @@
-        body {
-            background-image: url("../src/assets/bg.jpg");
-            background-attachment: fixed;
-            object-fit: cover
-        }
-        
+    body {
+        background-image: url("../src/assets/bg.jpg");
+        background-attachment: fixed;
+        object-fit: cover
+    }
+    
+    .navbar {
+        background: rgb(27, 37, 30);
+        color: rgb(226, 248, 233);
+        display: flex;
+        grid-template-columns: auto 1fr;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: space-between;
+        height: 70px;
+        transition: all 0.5s;
+    }
+    
+    .navbar:hover {
+        height: 90px;
+    }
+    
+    .navlinks {
+        align-self: center;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    
+    .navlink {
+        font-size: 10;
+        text-align: center;
+    }
+    
+    .navlinks a {
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 20px;
+    }
+    
+    .navlinks a:hover {
+        font-size: 15
+    }
+    
+    navlinks div {
+        transition: all 0.5s;
+        background-color: rgb(27, 37, 30);
+    }
+    
+    .navlinks div:hover {
+        background-color: transparent;
+    }
+    
+    .active {
+        color: green;
+    }
+    
+    .banner {
+        max-width: fit-content;
+        height: 600px;
+        background-position: center;
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #background-video {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        object-fit: cover
+    }
+    
+    .inner {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(135deg, #e66465, #300206);
+        opacity: .8;
+        margin: auto;
+    }
+    
+    .bannertext {
+        width: auto;
+        position: absolute;
+        z-index: 3;
+        color: aliceblue;
+    }
+    
+    .coname {
+        font-size: 300%;
+        letter-spacing: 5px
+    }
+    
+    .highlights {
+        background: #f7f7f7f8;
+        text-align: center;
+        padding: 10px
+    }
+    
+    .highlighttext {
+        font-size: 20;
+        letter-spacing: 2px;
+        padding: 20px;
+        margin: 20px;
+        text-transform: capitalize;
+    }
+    
+    .cardbox {
+        justify-content: space-evenly;
+    }
+    
+    .content {
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 30px;
+        background: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 115%;
+    }
+    
+    .icon {
+        margin: 30px;
+    }
+    
+    .icon a {
+        color: #810610b9;
+        opacity: 0.8;
+    }
+    
+    .icon a:hover {
+        color: #e66465;
+    }
+    
+    .moto {
+        height: 380px;
+        text-align: center;
+        background: #810610b9;
+        color: aliceblue;
+        font-size: 200%;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: 0.5s
+    }
+    
+    .moto p {
+        padding-top: 100px;
+        padding-bottom: 50px
+    }
+    
+    .profiles {
+        text-align: center;
+        background: #f7f7f7f8;
+        margin-top: 0px;
+        text-align: center
+    }
+    
+    .profilecard {
+        height: 300px;
+        width: 500px;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 30px;
+        background: white;
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .quote {
+        font-size: 130%;
+        border-left: 2px #5c0c13;
+        margin: 20px;
+        letter-spacing: 2px
+    }
+    
+    .intro {
+        float: right;
+    }
+    
+    .intro h3 {
+        color: red;
+        text-transform: capitalize;
+    }
+    
+    .profiletext {
+        padding: 50px;
+        letter-spacing: 3px;
+        font-size: 115%;
+        text-transform: capitalize;
+    }
+    
+    .contacts {
+        background: linear-gradient(100deg, #e66465, #300206);
+        opacity: 0.9;
+        color: white;
+        justify-content: center;
+        font-size: 10;
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 30px
+    }
+    
+    .contacts ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .contacts a {
+        color: aliceblue
+    }
+    
+    @media screen and (max-width: 736px) {
         .navbar {
-            background: rgb(27, 37, 30);
-            color: rgb(226, 248, 233);
-            display: flex;
-            grid-template-columns: auto 1fr;
-            font-style: bold;
-            text-transform: uppercase;
-            text-align: center;
-            justify-content: space-between;
-            height: 70px;
-            transition: all 0.5s;
+            justify-content: space-evenly
         }
-        
-        .navbar:hover {
-            height: 90px;
-        }
-        
-        .navlinks {
-            align-self: center;
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            justify-content: space-evenly;
-        }
-        
-        .navlink {
-            font-size: 10;
-            text-align: center;
-        }
-        
-        .navlinks a {
-            color: aliceblue;
-            text-align: center;
-            text-decoration: none;
-            text-transform: capitalize;
-            padding: 20px;
-        }
-        
-        .navlinks a:hover {
-            font-size: 15
-        }
-        
-        navlinks div {
-            transition: all 0.5s;
-            background-color: rgb(27, 37, 30);
-        }
-        
-        .navlinks div:hover {
-            background-color: transparent;
-        }
-        
-        .active {
-            color: green;
-        }
-        
         .banner {
-            max-width: fit-content;
-            height: 600px;
-            background-position: center;
-            position: relative;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            height: 400px;
         }
-        
-        #background-video {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-            position: relative;
-            object-fit: cover
-        }
-        
-        .inner {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: 2;
-            background: linear-gradient(135deg, #e66465, #300206);
-            opacity: .8;
-            margin: auto;
-        }
-        
-        .bannertext {
-            width: auto;
-            position: absolute;
-            z-index: 3;
-            color: aliceblue;
-        }
-        
         .coname {
-            font-size: 300%;
-            letter-spacing: 5px
-        }
-        
-        .highlights {
-            background: #f7f7f7f8;
-            text-align: center;
-            padding: 10px
-        }
-        
-        .highlighttext {
-            font-size: 20;
-            letter-spacing: 2px;
-            padding: 20px;
-            margin: 20px;
-            text-transform: capitalize;
-        }
-        
-        .cardbox {
-            justify-content: space-evenly;
-        }
-        
-        .content {
-            width: 25%;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 30px;
-            background: white;
-            text-align: center;
-            display: inline-block;
-            font-size: 115%;
-        }
-        
-        .icon {
-            margin: 30px;
-        }
-        
-        .icon a {
-            color: #810610b9;
-            opacity: 0.8;
-        }
-        
-        .icon a:hover {
-            color: #e66465;
-        }
-        
-        .moto {
-            height: 380px;
-            text-align: center;
-            background: #810610b9;
-            color: aliceblue;
             font-size: 200%;
-            font-style: italic;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            transition: 0.5s
+            letter-spacing: 2px;
         }
-        
-        .moto p {
-            padding-top: 100px;
-            padding-bottom: 50px
+        .content {
+            height: 480px;
+            width: 300px;
+            margin-left: 0px;
         }
-        
-        .profiles {
-            text-align: center;
-            background: #f7f7f7f8;
-            margin-top: 0px;
-            text-align: center
-        }
-        
         .profilecard {
-            width: 25%;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 30px;
-            background: white;
-            display: inline-block;
-            text-align: left;
+            height: 400px;
+            width: 300px;
         }
-        
-        .quote {
-            font-size: 130%;
-            border-left: 2px #5c0c13;
-            margin: 20px;
-            letter-spacing: 2px
-        }
-        
-        .intro {
-            float: right;
-        }
-        
-        .intro h3 {
-            color: red;
-            text-transform: capitalize;
-        }
-        
-        .profiletext {
-            padding: 50px;
-            letter-spacing: 3px;
-            font-size: 115%;
-            text-transform: capitalize;
-        }
-        
-        .contacts {
-            background: linear-gradient(100deg, #e66465, #300206);
-            opacity: 0.9;
-            color: white;
-            justify-content: center;
-            font-size: 10;
-            text-align: center;
-            margin-bottom: 0px;
-            padding: 30px
-        }
-        
-        .contacts ul {
-            display: flex;
-            justify-content: space-evenly;
-            align-self: center;
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-        }
-        
-        .contacts a {
-            color: aliceblue
-        }
-        
-        @media screen and (max-width: 736px) {
-            .navbar {
-                justify-content: space-evenly
-            }
-            .banner {
-                height: 400px;
-            }
-            .coname {
-                font-size: 200%;
-                letter-spacing: 2px;
-            }
-        }
+    }
