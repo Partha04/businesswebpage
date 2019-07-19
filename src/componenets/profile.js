@@ -7,7 +7,7 @@ class Profile extends Component {
         return ( 
          <div >
              
-              <div className="profiles">
+              <div className="profiles" >
                 <div className="profiletext">
                 <h1>what others say</h1>
                 <p>lorem ipsum dolor jms skdio skks ussppa sdddsae

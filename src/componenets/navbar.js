@@ -16,12 +16,12 @@ class Navbar extends Component {
             </div>
             <div>
             <li>
-              <a href="s" className='navlink'>about</a>
+              <a href="#about" className='navlink'>about</a>
             </li>
             </div>
             <div>
             <li>
-              <a href="s" className='navlink'>policy</a>
+              <a href="#policy" className='navlink'>policy</a>
             </li>
             </div>
            

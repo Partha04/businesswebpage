@@ -10,7 +10,7 @@ class Card extends Component {
 
         return ( <div class="content">
         <header className="icon">
-            <a href={link} ><i className={icon}></i> </a>
+            <a href={link} ><i className={icon}></i></a>
             
         </header>
         <h2>Ante sem integer</h2>
